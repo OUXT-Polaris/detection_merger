@@ -27,9 +27,11 @@ include_directories(
 add_library(detection_merger src/detection_merger.cpp)
 target_link_libraries(detection_merger ${catkin_LIBRARIES})
 class_loader_hide_library_symbols(detection_merger)
+add_dependencies(detection_merger ${catkin_EXPORTED_TARGETS})
 
 add_executable(detection_merger_node src/detection_merger_node.cpp)
 target_link_libraries(detection_merger_node ${catkin_LIBRARIES})
+add_dependencies(detection_merger_node ${catkin_EXPORTED_TARGETS})
 
 install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
