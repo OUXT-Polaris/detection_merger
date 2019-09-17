@@ -1,0 +1,7 @@
+<library path="lib/libdetection_merger">
+    <class name="detection_merger/DetectionMerger" type="detection_merger::DetectionMerger" base_class_type="nodelet::Nodelet">
+      <description>
+        DetectionMerger merged 3D detection results
+      </description>
+    </class>
+  </library>

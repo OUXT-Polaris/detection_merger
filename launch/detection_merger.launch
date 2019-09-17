@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="node_name" default="detection_merger_node"/>
+
+    <node pkg="detection_merger" type="detection_merger_node" name="$(arg node_name)" output="log" respawn="true" respawn_delay="0">
+        
+    </node>
+</launch>
