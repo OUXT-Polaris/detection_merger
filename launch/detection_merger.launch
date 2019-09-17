@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <launch>
     <arg name="node_name" default="detection_merger_node"/>
+    <arg name="num_detections" default="2"/>
 
     <node pkg="detection_merger" type="detection_merger_node" name="$(arg node_name)" output="log" respawn="true" respawn_delay="0">
-        
+        <param name="num_detections" value="$(arg num_detections)"/>
     </node>
 </launch>

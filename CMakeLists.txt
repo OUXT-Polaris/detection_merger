@@ -10,14 +10,12 @@ find_package(catkin REQUIRED COMPONENTS
   pluginlib
   roscpp
   vision_msgs
-  tf2_ros
-  tf2_geometry_msgs
 )
 
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES detection_merger
-  CATKIN_DEPENDS message_filters nodelet pluginlib roscpp vision_msgs tf2_ros tf2_geometry_msgs
+  CATKIN_DEPENDS message_filters nodelet pluginlib roscpp vision_msgs
 #  DEPENDS system_lib
 )
 
