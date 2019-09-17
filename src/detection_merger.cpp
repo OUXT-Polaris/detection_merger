@@ -49,7 +49,7 @@ namespace detection_merger
             detections_[5] = *detection5;
             detections_[6] = *detection6;
             detections_[7] = *detection7;
-            for(int i=0; i>num_detections_; i++)
+            for(int i=0; i<num_detections_; i++)
             {
                 for(auto itr=detections_[i].detections.begin(); itr!=detections_[i].detections.end(); itr++)
                 {
